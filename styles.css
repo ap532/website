@@ -104,6 +104,11 @@ a {
   gap: 0.55rem;
 }
 
+.support-copy-block {
+  max-width: 720px;
+  gap: 1rem;
+}
+
 .headline-block-left {
   max-width: 720px;
 }
@@ -151,6 +156,23 @@ a {
 
 .cta-line {
   font-size: clamp(2.4rem, 5vw, 4.5rem);
+}
+
+.support-copy {
+  font-size: var(--body-size);
+  line-height: 1.5;
+  color: var(--text-soft);
+  text-align: center;
+}
+
+.credential-copy {
+  font-family: "Inter Tight", "Inter", system-ui, sans-serif;
+  font-size: var(--section-size);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+  color: rgba(17, 17, 17, 0.76);
+  text-align: center;
 }
 
 .cta-group {
