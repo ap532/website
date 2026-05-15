@@ -104,6 +104,11 @@ a {
   gap: 0.55rem;
 }
 
+.support-copy-block {
+  max-width: 720px;
+  gap: 1rem;
+}
+
 .headline-block-left {
   max-width: 720px;
 }
@@ -146,11 +151,50 @@ a {
 }
 
 .panel-cta {
-  min-height: 82vh;
+  min-height: 88vh;
+  padding-bottom: clamp(6rem, 12vh, 8rem);
+}
+
+.panel-cta .center-stack-tight {
+  gap: 0;
+}
+
+.cta-offset-stack {
+  width: 100%;
+  min-height: auto;
+  justify-content: flex-start;
+  padding-top: clamp(1.25rem, 2.5vh, 1.75rem);
+  border-top: 1px solid var(--line);
+  margin-bottom: clamp(1.75rem, 4vh, 2.5rem);
+}
+
+.panel-cta .headline-block-left {
+  text-align: left;
 }
 
 .cta-line {
   font-size: clamp(2.4rem, 5vw, 4.5rem);
+}
+
+.support-copy {
+  font-size: var(--body-size);
+  line-height: 1.5;
+  color: var(--text-soft);
+  text-align: center;
+}
+
+.credential-copy {
+  font-family: "Inter Tight", "Inter", system-ui, sans-serif;
+  font-size: var(--section-size);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+  color: rgba(17, 17, 17, 0.76);
+  text-align: center;
+}
+
+.panel-cta .support-copy-block {
+  margin-bottom: clamp(1.75rem, 4vh, 2.5rem);
 }
 
 .cta-group {
@@ -158,13 +202,14 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: clamp(1.75rem, 4vh, 2.5rem);
 }
 
 .logo-block {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 
 .logo-mark {
